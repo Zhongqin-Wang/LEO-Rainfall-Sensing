@@ -1,0 +1,125 @@
+station:
+  lat_deg: -34.58374
+  lon_deg: 150.15013
+  height_m: 58
+  antenna_height_m: 2.0
+  epsilon_r: 10.48
+  conductivity: 2.04
+  polarization: circular
+tx_clock:
+  lo_offset_hz:
+  - -500
+  - 500
+  sfo_ppm:
+  - -1
+  - 1
+  timing_offset_samples:
+  - -0.5
+  - 0.5
+  phase_noise_linewidth_hz:
+  - 0
+  - 0
+clock:
+  lo_offset_hz:
+  - -5000
+  - 5000
+  sfo_ppm:
+  - -10
+  - 10
+  timing_offset_samples:
+  - -0.5
+  - 0.5
+  phase_noise_linewidth_hz:
+  - 10
+  - 200
+receiver:
+  temperature_k: 290.0
+  noise_figure_db: 3.0
+  agc: logged
+experiment:
+  seed: 20260907
+geometry:
+  eop_path: data/earth_orientation/finals2000A.all
+  orbit_path: data/archive/starlink_20261018T031002Z_7c79e1a455e6.json
+  auto_update_orbits: false
+  max_epoch_distance_days: 3.0
+  satellite_batch_size: 128
+  start_time_utc: '2026-10-18T03:40:00Z'
+  duration_hours: 1
+  step_seconds: 10
+  min_elevation_deg: 25.0
+orbit_prediction:
+  position_error_m:
+  - 100.0
+  - -50.0
+  - 30.0
+  velocity_error_m_s:
+  - 0.1
+  - -0.05
+  - 0.02
+weather:
+  model: temporal_uniform
+  rain_rate_mm_h: 10.0
+  rain_top_km: 5.0
+  reference_time_utc: '2026-10-18T03:40:00Z'
+  time_series:
+    elapsed_s:
+    - 0
+    - 600
+    - 1200
+    - 1800
+    - 2400
+    - 3000
+    - 3600
+    rain_rate_mm_h:
+    - 0
+    - 5
+    - 20
+    - 10
+    - 30
+    - 5
+    - 0
+retrieval:
+  assumed_rain_top_km: 5.0
+propagation:
+  enabled:
+    fspl: true
+    beam: true
+    gas: true
+    cloud: true
+    rain: true
+    scintillation: false
+    ground_reflection: false
+  polarization_tilt_deg: 45.0
+  reflection:
+    circular_port: co
+    surface_rms_height_m: 0.002
+    max_antenna_rejection_db: 40.0
+  beam:
+    tx_gain_dbi: 30.0
+    rx_gain_dbi: 35.0
+    pointing_error_deg: 0.0
+    half_power_beamwidth_deg: 2.0
+  gas:
+    water_vapour_density_g_m3: 7.5
+    pressure_hpa: 1013.25
+    temperature_k: 288.15
+  cloud:
+    temperature_c: 0.0
+    liquid_water_kg_m2: 0.5
+  scintillation:
+    sigma_db: 0.3
+    correlation_s: 10.0
+ofdm:
+  profile: starlink_public_v1
+  payload_mode: template_qpsk
+  symbols: 302
+  cp_samples: 32
+  pilot_spacing: 8
+  tx_power_w: 1.0
+  motion_enabled: true
+link:
+  starlink_channel: 6
+  carrier_hz: 12.0751171875e9
+  bandwidth_hz: 240.0e6
+  subcarrier_spacing_hz: 234375
