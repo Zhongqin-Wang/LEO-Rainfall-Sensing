@@ -1,0 +1,46 @@
+{
+  "paper": "https://arxiv.org/abs/2602.02627",
+  "downloaded_at_utc": "2026-10-18T03:20:49.236228+00:00",
+  "files": [
+    {
+      "file": "LICENSE.txt",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/LICENSE.txt",
+      "sha256": "2eac370ac8e59527726a0b3ee5493f9f1bc1ff1a941f2bb68a1b97230c009046"
+    },
+    {
+      "file": "genPss.m",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/genPss.m",
+      "sha256": "32c7a9a5844499e5f92dbd6503fdd0f2ebe178a1f6691313887f70b53e1d21b6"
+    },
+    {
+      "file": "genSss.m",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/genSss.m",
+      "sha256": "b327682ef5adc9c2692c3a0332cd0a4c9a30bc262fad45824b770d9e3c2b5e3e"
+    },
+    {
+      "file": "genEdgePilots.m",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/genEdgePilots.m",
+      "sha256": "906c1aa492351ea3ffb61551eb7439be7e5933cddece128a111b23b39aab904b"
+    },
+    {
+      "file": "genReferenceTemplate.m",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/genReferenceTemplate.m",
+      "sha256": "07965e1b49bae96f8fee74052f5eb7af017cc34b881c2cf6b51c31a6fe11fdda"
+    },
+    {
+      "file": "sssVec.mat",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/sssVec.mat",
+      "sha256": "d1e35826279baf0fc3e5a6fa3d34e5a83dd525956132ad9cecdb2af48450f982"
+    },
+    {
+      "file": "referenceTemplate.mat",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/reference-template/referenceTemplate.mat",
+      "sha256": "ec77ad6f9a17c8b14451f7f3cea6114952d0ad3aca26b3eb8c0e9aec06b002cd"
+    },
+    {
+      "file": "starlinkConstants.m",
+      "source_url": "https://rnl-data.ae.utexas.edu/datastore/supplementaryMaterial/qin-starlink-pilots/utils/signalProcessing/starlinkConstants.m",
+      "sha256": "06704563406a8c70c7e3178e3f003753cbda141f554dfc2d3102a8ffbd70a76b"
+    }
+  ]
+}
